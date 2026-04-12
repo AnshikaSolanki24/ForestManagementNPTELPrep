@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f1419 0%, #2d2d6a 100%);
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(45, 55, 72, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);  
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #f7fafc;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: linear-gradient(45deg, #4a5568, #718096);
+  color: #f7fafc;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 85, 104, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #2d3748, #4a5568);
+  box-shadow: 0 6px 20px rgba(74, 85, 104, 0.6);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button.back-btn {
+  background: linear-gradient(45deg, #e53e3e, #c53030);
+  box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4);
+}
+
+button.back-btn:hover {
+  background: linear-gradient(45deg, #c53030, #9b2c2c);
+  box-shadow: 0 6px 20px rgba(229, 62, 62, 0.6);
+}
+
+.question {
+  background: rgba(74, 85, 104, 0.8);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.question h3 {
+  margin-top: 0;
+  color: #f7fafc;
+  font-weight: 600;
+}
+
+.option {
+  display: block;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border: 2px solid #4a5568;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: rgba(113, 128, 150, 0.2);
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.option:hover {
+  background: rgba(113, 128, 150, 0.4);
+  border-color: #718096;
+}
+
+.option.selected {
+  background: linear-gradient(45deg, #3182ce, #2c5282);
+  border-color: #63b3ed;
+  color: #bee3f8;
+  box-shadow: 0 2px 8px rgba(99, 179, 237, 0.3);
+}
+
+.option.correct {
+  background: linear-gradient(45deg, #38a169, #22543d);
+  border-color: #68d391;
+  color: #c6f6d5;
+  box-shadow: 0 2px 8px rgba(104, 211, 145, 0.3);
+}
+
+.option.wrong {
+  background: linear-gradient(45deg, #e53e3e, #742a2a);
+  border-color: #fc8181;
+  color: #fed7d7;
+  box-shadow: 0 2px 8px rgba(252, 129, 129, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  #app {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  #landing button {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 8px 0;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin: 6px 0;
+    font-size: 15px;
+  }
+
+  .question {
+    padding: 16px;
+    margin: 12px 0;
+  }
+
+  .option {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .question h3 {
+    font-size: 1rem;
+  }
+
+  button.back-btn {
+    margin-top: 10px;
+  }
+}
