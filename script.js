@@ -4,6 +4,7 @@ const resultDiv = document.getElementById("result");
 
 let currentQuestions = [];
 let userAnswers = {};
+let currentWeek = null;
 
 function shuffleArray(array) {
   let copy = [...array];
@@ -73,6 +74,7 @@ function startQuiz(week) {
 // ---------------- INIT QUIZ ----------------
 function initQuiz(week, mode) {
   quizMode = mode;
+  currentWeek = week;
 
   landingDiv.classList.add("hidden");
   quizDiv.classList.remove("hidden");
@@ -100,6 +102,15 @@ function initQuiz(week, mode) {
 // ---------------- RENDER QUIZ ----------------
 function renderQuiz() {
   quizDiv.innerHTML = "";
+  
+  let weekHeader = document.createElement("div");
+  weekHeader.style.marginBottom = "20px";
+  let weekTitle = document.createElement("h2");
+  weekTitle.innerText = currentWeek === "all" ? "All Weeks" : `Week ${currentWeek}`;
+  weekTitle.style.margin = "0 0 10px 0";
+  weekHeader.appendChild(weekTitle);
+  quizDiv.appendChild(weekHeader);
+  
   quizDiv.appendChild(createBackButton());
 
   currentQuestions.forEach((q, index) => {
@@ -151,6 +162,7 @@ function renderQuiz() {
 function showResult() {
   quizDiv.classList.add("hidden");
   resultDiv.classList.remove("hidden");
+  window.scrollTo(0, 0);
 
   let score = 0;
   let total = currentQuestions.length;
@@ -161,7 +173,19 @@ function showResult() {
     }
   });
 
-  resultDiv.innerHTML = `<h2>You scored ${score} / ${total}</h2>`;
+  let weekHeader = document.createElement("div");
+  weekHeader.style.marginBottom = "20px";
+  let weekTitle = document.createElement("h2");
+  weekTitle.innerText = currentWeek === "all" ? "All Weeks" : `Week ${currentWeek}`;
+  weekTitle.style.margin = "0 0 10px 0";
+  weekHeader.appendChild(weekTitle);
+  
+  resultDiv.innerHTML = "";
+  resultDiv.appendChild(weekHeader);
+  
+  let scoreHeader = document.createElement("h2");
+  scoreHeader.innerText = `You scored ${score} / ${total}`;
+  resultDiv.appendChild(scoreHeader);
   resultDiv.appendChild(createBackButton());
 
   // Render each question with feedback
