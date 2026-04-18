@@ -456,7 +456,7 @@ week:7
 {
 question:"Tending is done during",
 options:["early stage of life","middle stage of life","late stage of life","any stage of life"],
-correctAnswer:"early stage of life",
+correctAnswer:"any stage of life",
 week:7
 },
 {
