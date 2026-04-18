@@ -873,15 +873,115 @@ week:11
 },
 
 /* ---------------- WEEK 12 ---------------- */
-{question:"Zoo example",options:["in-situ conservation","ex-situ conservation","in-situ preservation","ex-situ preservation"],correctAnswer:"ex-situ conservation",week:12},
-{question:"Captive breeding",options:["in-situ conservation","ex-situ conservation","in-situ preservation","ex-situ preservation"],correctAnswer:"ex-situ conservation",week:12},
-{question:"Elephant type",options:["umbrella","keystone","flagship","all"],correctAnswer:"all",week:12},
-{question:"Sustainable harvest",options:["conservation","preservation","environmentalism","none"],correctAnswer:"conservation",week:12},
-{question:"Not 1894 forest type",options:["protection","production","minor","major"],correctAnswer:"major",week:12},
-{question:"Tiger type",options:["umbrella","keystone","flagship","all"],correctAnswer:"all",week:12},
-{question:"Canal planting",options:["farm","community","extension","agro"],correctAnswer:"extension",week:12},
-{question:"Van Panchayat 1931",options:["Tamil Nadu","MP","WB","Uttarakhand"],correctAnswer:"Uttarakhand",week:12},
-{question:"Orchid tourism",options:["umbrella","keystone","flagship","extinct"],correctAnswer:"flagship",week:12},
-{question:"Fig tree role",options:["least concern","keystone","flagship","extinct"],correctAnswer:"keystone",week:12}
+{
+question:"The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+options:[
+"climatic climax",
+"edaphic climax",
+"disclimax",
+"catastrophic climax"
+],
+correctAnswer:"disclimax",
+week:12
+},
+{
+question:"“Science of relationships between organisms and their environments” is the definition of:",
+options:[
+"conservation",
+"preservation",
+"environmentalism",
+"ecology"
+],
+correctAnswer:"ecology",
+week:12
+},
+{
+question:"“allowing some places and some creatures to exist without significant human interference” is a definition of",
+options:[
+"conservation",
+"preservation",
+"environmentalism",
+"all of these"
+],
+correctAnswer:"preservation",
+week:12
+},
+{
+question:"For absolute form factor, the reference for the base of the cylinder is",
+options:[
+"base of the tree",
+"breast height",
+"10% of tree height",
+"20% of tree height"
+],
+correctAnswer:"base of the tree",
+week:12
+},
+{
+question:"Which of these has the highest organic matter content?",
+options:[
+"peaty soil",
+"alluvial soil",
+"saline soil",
+"red and yellow soil"
+],
+correctAnswer:"peaty soil",
+week:12
+},
+{
+question:"For a tree with dbh = 45.6 cm, height = 27 m and total stem volume of 1.78 cum, the artificial form factor for the tree is:",
+options:[
+"0.1",
+"0.2",
+"0.3",
+"0.4"
+],
+correctAnswer:"0.4",
+week:12
+},
+{
+question:"“Plant community, predominantly comprised of trees and other woody vegetation, usually with a closed canopy\" is",
+options:[
+"silvicultural definition of forests",
+"FAO definition of forests",
+"legal definition of forests",
+"ecological definition of forests"
+],
+correctAnswer:"ecological definition of forests",
+week:12
+},
+{
+question:"The term laterite soil is derived from Latin later which means",
+options:[
+"red",
+"brick",
+"fertile",
+"infertile"
+],
+correctAnswer:"brick",
+week:12
+},
+{
+question:"Choose the correct statement:",
+options:[
+"For a non-circular cross-section, girth tape over-estimates the sectional area.",
+"For a non-circular cross-section, girth tape under-estimates the sectional area.",
+"For a non-circular cross-section, girth tape correctly estimates the sectional area.",
+"None of these is a correct statement."
+],
+correctAnswer:"For a non-circular cross-section, girth tape over-estimates the sectional area.",
+week:12
+},
+{
+question:"Vertical arrangement of soil horizons is called",
+options:[
+"soil texture",
+"soil structure",
+"soil profile",
+"soil science"
+],
+correctAnswer:"soil profile",
+week:12
+}
 
 ];
